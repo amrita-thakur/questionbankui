@@ -41,10 +41,10 @@ export default {
   },
   created() {
     this.$axios
-      .get("https://questionbankioe.herokuapp.com/getpapers")
+      .get("https://questionbankioedbms.herokuapp.com/getpapers")
       .then(response => (this.papers = response.data.paper_list));
     this.$axios
-      .get("https://questionbankioe.herokuapp.com/getcourses")
+      .get("https://questionbankioedbms.herokuapp.com/getcourses")
       .then(response => (this.courses = response.data.course_list));
   },
   methods: {}
